@@ -1,0 +1,227 @@
+@import "reset";
+
+@import "compass/reset";
+
+@import "configuration";
+
+@import "fonts";
+
+@import "utilities";
+
+// Inheritance
+html {
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $base-color-dark;
+}
+
+// ======
+// HEADER
+// ======
+.header {
+  display: block;
+  margin: auto;
+  padding: 25px;
+
+  text-align: center;
+  line-height: 1;
+  background-color: $base-color-dark;
+  border-bottom: 1px solid #333;
+
+  h1 {
+    display: block;
+    margin: auto;
+    width: 315px;
+
+    padding: 15px;
+
+    font-family: $highlight-font;
+    color: $strong-text-color;
+    font-weight: 400;
+
+    text-transform: lowercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+
+    border-top: 4px double $highlight-color;
+  }
+
+  .close {
+    letter-spacing: -2px;
+  }
+  .h1-sub {
+    width: 315px;
+    padding-bottom: 15px;
+    margin: auto;
+    margin-bottom: 15px;
+
+    font-family: $highlight-font;
+    color: $highlight-color;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+    border-bottom: 4px double $highlight-color;
+  }
+}
+// ====
+// MAIN
+// ====
+.main-full {
+  background: $base-color;
+}
+.main {
+  display: block;
+  position: relative;
+  margin: auto;
+  font-size: $base-font-size * 1.1px;
+
+  width: 650px;
+  left: -75px;
+
+  h2.about {
+    font-family: $highlight-font;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .about-profile {
+    margin: auto;
+    margin-bottom: 25px;
+    overflow: hidden;
+    width: 200px;
+    border-radius: 2px;
+    border: 1px solid #888;
+  }
+
+  p.about {
+    margin-bottom: 25px;
+  }
+// =======
+// SIDEBAR
+// =======
+  .sidebar {
+    display: block;
+    float: left;
+
+    width: 150px;
+    margin-bottom: 200px;
+
+    border-right: 1px solid $strong-text-color;
+
+    text-align: right;
+  }
+
+  .sidebar-nav-list {
+    padding-top: 15px;
+  }
+
+  .sidebar-nav-list > li {
+    color: $strong-text-color;
+    font-family: $base-font;
+    line-height: 1.35;
+
+    a {
+      display: block;
+      float: right;
+      padding: 10px 25px 10px 10px;
+      white-space: no-wrap;
+    }
+
+    a:before {
+      content: "→";
+      position: relative;
+      right: 4px;
+      opacity: 0;
+      transition: opacity 500ms linear;
+    }
+
+    a:hover {
+      color: $highlight-color;
+    }
+
+    a:hover:before {
+      opacity: 1;
+    }
+
+    a#selected {
+      color: $highlight-color;
+    }
+
+    a#selected:before {
+      color: $highlight-color;
+      opacity: 1;
+    }
+  }
+  // =======
+  // CONTENT
+  // =======
+  .body {
+    display: block;
+    float: left;
+    padding: 25px;
+
+    width: $body-width;
+
+    font-family: $base-font;
+    color: $body-text-color;
+    text-align: left;
+    line-height: 1.35;
+  }
+}
+// ======
+// FOOTER
+// ======
+.footer {
+  border-top: 1px solid #333;
+}
+.footer > nav {
+  width: $body-width;
+  padding-bottom: 25px;
+  margin: auto;
+
+  color: $strong-text-color;
+  font-family: $highlight-font;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 1.35;
+
+  border-left: 1px solid #333;
+}
+
+.footer-nav-list {
+  padding-top: 15px;
+
+  a:after {
+    content: "←";
+    position: relative;
+    left: 4px;
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
+
+  a:hover {
+    color: $highlight-color;
+  }
+
+  a:hover:after {
+    opacity: 1;
+  }
+
+  a#selected:hover:after {
+    opacity: 1;
+  }
+
+}
+
+.footer-nav-list > li > a {
+  display: block;
+  width: 115px;
+
+  padding: 10px 10px 10px 25px;
+}
