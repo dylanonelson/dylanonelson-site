@@ -28,3 +28,28 @@ img {
   display: block;
   max-width: 100%;
 }
+
+a:before {
+  content: "→";
+  position: relative;
+  right: 4px;
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+
+a:hover {
+  color: $highlight-color;
+}
+
+a:hover:before {
+  opacity: 1;
+}
+
+a#selected {
+  color: $highlight-color;
+}
+
+a#selected:before {
+  color: $highlight-color;
+  opacity: 1;
+}
