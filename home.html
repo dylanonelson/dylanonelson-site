@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home: Dylan O. Nelson</title>
+	<title>Dylan O. Nelson</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 	<link rel="icon" type="image/png" href="imgs/icon.png">
 </head>
@@ -14,10 +14,10 @@
 	<div class="main-full">
 			<nav class="sidebar">
 				<ol class="sidebar-nav-list clearfix">
-					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="documents/resume.pdf">Resume</a></li>
+					<li><a class="arrow-link" href="#about">About</a></li>
+					<li><a class="arrow-link" href="#portfolio">Portfolio</a></li>
+					<li><a class="arrow-link" href="#contact">Contact</a></li>
+					<li><a class="arrow-link" href="documents/dylan-nelson-resume.pdf" target="_blank">Resume</a></li>
 				</ol>
 			</nav>
 		<main class="main clearfix">
@@ -44,7 +44,7 @@
 						Message
 					</h3>
 					<nav class="portfolio-links">
-						<a href="http://www.mcmedium.com">live</a><a href="http://www.github.com/dylanonelson/medium_clone">GitHub</a>
+						<a class="arrow-link" href="http://www.mcmedium.com">live</a><a class="arrow-link" href="http://www.github.com/dylanonelson/medium_clone">GitHub</a>
 					</nav>
 
 					<ul class="portfolio-features-list clearfix">
@@ -56,9 +56,13 @@
 					<p class="portfolio-description">
 						Message is a comprehensive Backbone app that consumes a Rails JSON API, providing users access to content and even RESTful actions regardless of whether they&#146;re logged in. Like Medium, Message features an intuitive text editor and an attractive, minimal design built from the ground up with custom CSS.
 					</p>
-
-					<img class="portfolio-screenshot" src="imgs/new-draft-page.jpg" alt="">
-					<img class="portfolio-screenshot" src="imgs/user-page.jpg" alt="">
+					
+					<a class="portfolio-screenshot" href="imgs/new-draft-page.jpg" target="_blank" target="_blank">
+						<img src="imgs/new-draft-page.jpg" alt="">
+					</a>
+					<a class="portfolio-screenshot" href="imgs/user-page.jpg" target="_blank" target="_blank">
+						<img src="imgs/user-page.jpg" alt="">
+					</a>
 
 				</article>
 				<article class="portfolio-project clearfix">
@@ -66,7 +70,7 @@
 						Asteroids.js
 					</h3>
 					<nav class="portfolio-links">
-						<a href="asteroids">live</a><a href="http://www.github.com/dylanonelson/asteroids">GitHub</a>
+						<a class="arrow-link" href="asteroids">live</a><a class="arrow-link" href="http://www.github.com/dylanonelson/asteroids">GitHub</a>
 					</nav>
 
 					<ul class="portfolio-features-list clearfix">
@@ -74,9 +78,13 @@
 						<li>Fluid ship handling &#224; la the original game</li>
 						<li>Play the game in a larger window for more asteroids</li>
 					</ul>
-
-					<img class="portfolio-screenshot" src="imgs/asteroids-screenshot.png" alt="">
-					<img class="portfolio-screenshot" src="imgs/asteroids-game-over.png" alt="">
+					
+					<a class="portfolio-screenshot" href="imgs/asteroids-screenshot.png" target="_blank">
+						<img src="imgs/asteroids-screenshot.png" alt="">
+					</a>
+					<a class="portfolio-screenshot" href="imgs/asteroids-game-over.png" target="_blank">
+						<img src="imgs/asteroids-game-over.png" alt="">
+					</a>
 
 				</article>
 				<article class="portfolio-project clearfix">
@@ -84,17 +92,25 @@
 						Great Books Ebooks
 					</h3>
 					<nav class="portfolio-links portfolio-links-gbf-ebooks">
-						<a href="#">Junior Great Books</a><a href="#">Immigrant Voices</a>
+						<a class="arrow-link" href="https://geo.itunes.apple.com/us/book/junior-great-books-series/id968897885?mt=11&uo=6" target="_blank">Junior Great Books</a><br/><a class="arrow-link" href="https://geo.itunes.apple.com/us/book/immigrant-voices/id849043681?mt=11&uo=6" target="_blank">Immigrant Voices</a>
 					</nav>
 
 					<ul class="portfolio-features-list clearfix">
+						<li>Ebooks designed for distribution on multiple channels</li>
 						<li>Pagination matching the print for ease of navigation</li>
-						<li>Typography and layout optimized for young readers</li>
-						<li>Fonts and styles matching the print with custom CSS for maintainable code</li>
+						<li>Templated CSS for maintainable code</li>
 					</ul>
 
-					<img class="portfolio-screenshot" src="imgs/series-2.png" alt="Junior Great Books, Series 2, Book Two">
-					<img class="portfolio-screenshot" src="imgs/immigrant-voices.png" alt="">
+					<p class="portfolio-description">
+						As Digital Production Editor at the Great Books Foundation, I made and maintained a series of ebooks, both creating them myself and working on them with freelancers. For complex projects such as the Junior Great Books program, I used Ruby, Sass, and regular expressions to script time-consuming parts of the process.
+					</p>
+
+					<a class="portfolio-screenshot" href="imgs/series-2.png" target="_blank">
+						<img src="imgs/series-2.png" alt="Junior Great Books, Series 2, Book Two">
+					</a>
+					<a class="portfolio-screenshot" href="imgs/immigrant-voices.png" target="_blank">
+						<img src="imgs/immigrant-voices.png" alt="">
+					</a>
 
 				</article>
 			</section>
@@ -104,15 +120,15 @@
 				</h2>
 				<nav class="contact">
 					<ul class="contact-link-list clearfix">
-						<li><a href="http://twitter.com/dylanonelson">Twitter</a></li>
-						<li><a href="http://github.com/dylanonelson">Github</a></li>
-						<li><a href="#">Gmail</a></li>
-						<li><a href="https://www.linkedin.com/pub/dylan-nelson/33/b21/b00">LinkedIn</a></li>
-						<li><a href="documents/resume.pdf">Resume</a></li>
+						<li><a class="icon twitter-icon" href="http://twitter.com/dylanonelson"></a></li>
+						<li><a class="icon github-icon" href="http://github.com/dylanonelson"></a></li>
+						<li><a class="icon gmail-icon" href="mailto:dylanonelson@gmail.com"></a></li>
+						<li><a class="icon linkedin-icon" href="https://www.linkedin.com/pub/dylan-nelson/33/b21/b00"></a></li>
+						<li><a class="icon resume-icon" href="documents/dylan-nelson-resume.pdf"></a></li>
 					</ul>
 				</nav>
 			</section>
-			<a class="back-to-top" href="#about">Back to top</a>
+			<a class="arrow-link back-to-top" href="#about">Back to top</a>
 		</main>
 	</div>
 
@@ -149,7 +165,7 @@
 			$('.sidebar-nav-list a, .back-to-top').click(function (event) {
 				$currentTarget = $(event.currentTarget);
 
-				if ($currentTarget.attr('href') === 'documents/resume.pdf') {
+				if ($currentTarget.attr('href') === 'documents/dylan-nelson-resume.pdf') {
 					return;
 				}
 

@@ -145,15 +145,15 @@ img {
 
 /* line 33, ../sass/_utilities.scss */
 a {
-  color: #000;
   font-family: Concourse Caps;
+  color: #000;
   font-weight: 300;
   text-transform: lowercase;
-  line-height: 1.35;
+  line-height: 1.5;
 }
 
 /* line 41, ../sass/_utilities.scss */
-a:before {
+.arrow-link:before {
   content: "→";
   position: relative;
   right: 4px;
@@ -167,7 +167,7 @@ a:hover {
 }
 
 /* line 53, ../sass/_utilities.scss */
-a:hover:before {
+.arrow-link:hover:before {
   opacity: 1;
 }
 
@@ -322,7 +322,7 @@ html {
 /* line 153, ../sass/screen.scss */
 .main .portfolio-project {
   padding-bottom: 15px;
-  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
 }
 /* line 156, ../sass/screen.scss */
 .main .portfolio-project img {
@@ -345,17 +345,16 @@ html {
   float: right;
 }
 /* line 177, ../sass/screen.scss */
+.main .portfolio-links a {
+  padding-left: 10px;
+}
+/* line 181, ../sass/screen.scss */
 .main .portfolio-links-gbf-ebooks {
   width: 200px;
   float: right;
   text-align: right;
 }
-/* line 183, ../sass/screen.scss */
-.main a {
-  display: inline-block;
-  padding-left: 10px;
-}
-/* line 188, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .main .portfolio-features-list {
   width: 400px;
   margin-left: 25px;
@@ -363,16 +362,16 @@ html {
   list-style-type: circle;
   clear: both;
 }
-/* line 194, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .main .portfolio-features-list li {
   float: left;
   margin-bottom: 5px;
 }
-/* line 201, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .main .portfolio-description {
   clear: both;
 }
-/* line 205, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .main .portfolio-screenshot {
   width: 315px;
   float: left;
@@ -381,29 +380,85 @@ html {
   border-radius: 2px;
   border: 1px solid #888;
 }
-/* line 214, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .main .contact-link-list {
   margin: auto;
-  margin-bottom: 350px;
+  margin-bottom: 300px;
   line-height: 2;
   text-align: center;
 }
-/* line 220, ../sass/screen.scss */
-.main .contact-link-list li {
-  text-align: center;
-}
-/* line 224, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .main .contact-link-list a {
-  padding: 0;
-  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
 }
-/* line 229, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .main .back-to-top {
   display: block;
   text-align: center;
 }
+/* line 231, ../sass/screen.scss */
+.main .icon {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-image: url("../imgs/social-icons.svg");
+  background-repeat: no-repeat;
+  background-size: 486px 425px;
+}
+/* line 240, ../sass/screen.scss */
+.main .icon:hover:after {
+  position: absolute;
+  width: 100px;
+  line-height: 3.125;
+  left: -110px;
+  top: -5px;
+  text-align: right;
+  color: #0C73D7;
+}
+/* line 250, ../sass/screen.scss */
+.main .twitter-icon {
+  background-position: 0px 0px;
+}
+/* line 254, ../sass/screen.scss */
+.main .twitter-icon:hover:after {
+  content: "→ Mention";
+}
+/* line 258, ../sass/screen.scss */
+.main .github-icon {
+  background-position: -249px -250px;
+}
+/* line 262, ../sass/screen.scss */
+.main .github-icon:hover:after {
+  content: "→ Star";
+}
+/* line 266, ../sass/screen.scss */
+.main .gmail-icon {
+  background-position: -187px -374px;
+}
+/* line 270, ../sass/screen.scss */
+.main .gmail-icon:hover:after {
+  content: "→ Email";
+}
+/* line 274, ../sass/screen.scss */
+.main .linkedin-icon {
+  background-position: -62px -63px;
+}
+/* line 278, ../sass/screen.scss */
+.main .linkedin-icon:hover:after {
+  content: "→ Connect";
+}
+/* line 282, ../sass/screen.scss */
+.main .resume-icon {
+  background-position: -374px -374px;
+}
+/* line 286, ../sass/screen.scss */
+.main .resume-icon:hover:after {
+  content: "→ Peruse";
+}
 
-/* line 237, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 footer {
   width: 100%;
   padding: 10px 0;
@@ -415,12 +470,12 @@ footer {
   border-top: 1px solid #888;
   font-family: Concourse;
 }
-/* line 249, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 footer p {
   margin: auto;
   width: 700px;
 }
-/* line 253, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 footer a:before {
   content: "";
 }

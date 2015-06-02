@@ -152,7 +152,7 @@ html {
 
   .portfolio-project {
     padding-bottom: 15px;
-    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
     img {
       cursor: pointer;
     }
@@ -174,15 +174,14 @@ html {
     float: right;
   }
 
+  .portfolio-links a {
+    padding-left: 10px;
+  }
+
   .portfolio-links-gbf-ebooks {
     width: 200px;
     float: right;
     text-align: right;
-  }
-
-  a {
-    display: inline-block;
-    padding-left: 10px;
   }
 
   .portfolio-features-list {
@@ -213,22 +212,79 @@ html {
 
   .contact-link-list {
     margin: auto;
-    margin-bottom: 350px;
+    margin-bottom: 300px;
     line-height: 2;
     text-align: center;
 
-    li {
-      text-align: center;
+    a {
+      display: block;
+      margin: auto;
+      margin-bottom: 15px;
     }
 
-    a {
-      padding: 0;
-      text-align: center;
-    }
   }
   .back-to-top {
     display: block;
     text-align: center;
+  }
+
+  .icon {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-image: url('../imgs/social-icons.svg');
+    background-repeat: no-repeat;
+    background-size: 486px 425px;
+  }
+
+  .icon:hover:after {
+    position: absolute;
+    width: 100px;
+    line-height: 50 / $base-font-size;
+    left: -110px;
+    top: -5px;
+    text-align: right;
+    color: $highlight-color;
+  }
+
+  .twitter-icon {
+    background-position: 0px 0px;
+  }
+
+  .twitter-icon:hover:after {
+    content: "→ Mention";
+  }
+
+  .github-icon {
+    background-position: -249px -250px;
+  }
+
+  .github-icon:hover:after {
+    content: "→ Star";
+  }
+
+  .gmail-icon {
+    background-position: -187px -374px;
+  }
+
+  .gmail-icon:hover:after {
+    content: "→ Email";
+  }
+
+  .linkedin-icon {
+    background-position: -62px -63px;
+  }
+
+  .linkedin-icon:hover:after {
+    content: "→ Connect";
+  }
+
+  .resume-icon {
+    background-position: -374px -374px;
+  }
+
+  .resume-icon:hover:after {
+    content: "→ Peruse";
   }
 }
 // ======

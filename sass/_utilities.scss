@@ -31,14 +31,14 @@ img {
 }
 
 a {
-  color: $strong-text-color;
   font-family: $highlight-font;
+  color: $strong-text-color;
   font-weight: 300;
   text-transform: lowercase;
-  line-height: 1.35;
+  line-height: 1.5;
 }
 
-a:before {
+.arrow-link:before {
   content: "→";
   position: relative;
   right: 4px;
@@ -50,7 +50,7 @@ a:hover {
   color: $highlight-color;
 }
 
-a:hover:before {
+.arrow-link:hover:before {
   opacity: 1;
 }
 

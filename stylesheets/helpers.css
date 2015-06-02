@@ -145,15 +145,15 @@ img {
 
 /* line 33, ../sass/_utilities.scss */
 a {
-  color: #000;
   font-family: Concourse Caps;
+  color: #000;
   font-weight: 300;
   text-transform: lowercase;
-  line-height: 1.35;
+  line-height: 1.5;
 }
 
 /* line 41, ../sass/_utilities.scss */
-a:before {
+.arrow-link:before {
   content: "→";
   position: relative;
   right: 4px;
@@ -167,7 +167,7 @@ a:hover {
 }
 
 /* line 53, ../sass/_utilities.scss */
-a:hover:before {
+.arrow-link:hover:before {
   opacity: 1;
 }
 
