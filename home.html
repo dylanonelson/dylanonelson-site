@@ -15,9 +15,9 @@
 			<nav class="sidebar">
 				<ol class="sidebar-nav-list clearfix">
 					<li><a href="#about">About</a></li>
-					<li><a href="documents/resume.pdf">Resume</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="documents/resume.pdf">Resume</a></li>
 				</ol>
 			</nav>
 			<section class="body" data-name="about">
@@ -106,6 +106,7 @@
 						<li><a href="http://github.com/dylanonelson">Github</a></li>
 						<li><a href="#">Gmail</a></li>
 						<li><a href="https://www.linkedin.com/pub/dylan-nelson/33/b21/b00">LinkedIn</a></li>
+						<li><a href="documents/resume.pdf">Resume</a></li>
 					</ul>
 				</nav>
 			</section>
@@ -144,6 +145,10 @@
 			})
 
 			$('.sidebar-nav-list a, .back-to-top').click(function (event) {
+				if (event.currentTarget.attr('href', 'resume')) {
+					return;
+				}
+
 				event.preventDefault();
 				$.scrollTo(
 					$(this).attr('href'), {
