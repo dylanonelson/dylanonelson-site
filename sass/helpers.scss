@@ -1,0 +1,22 @@
+@import "reset";
+
+@import "compass/reset";
+
+@import "configuration";
+
+@import "fonts";
+
+@import "utilities";
+
+div {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+  line-height: 100 / 60;
+  font-family: $highlight-font;
+  letter-spacing: 2px;
+  color: rgba(1,1,1,.8);
+  text-align: center;
+  background: $highlight-color;
+}
