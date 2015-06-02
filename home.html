@@ -12,7 +12,6 @@
 	</header>
 	
 	<div class="main-full">
-		<main class="main clearfix">
 			<nav class="sidebar">
 				<ol class="sidebar-nav-list clearfix">
 					<li><a href="#about">About</a></li>
@@ -21,6 +20,7 @@
 					<li><a href="documents/resume.pdf">Resume</a></li>
 				</ol>
 			</nav>
+		<main class="main clearfix">
 			<section class="body" data-name="about">
 				<h2 class="about">
 					About me
@@ -76,6 +76,7 @@
 					</ul>
 
 					<img class="portfolio-screenshot" src="imgs/asteroids-screenshot.png" alt="">
+					<img class="portfolio-screenshot" src="imgs/asteroids-game-over.png" alt="">
 
 				</article>
 				<article class="portfolio-project clearfix">
@@ -164,7 +165,7 @@
 				)
 			})
 
-			$('.main').waypoint({
+			$('.main-full').waypoint({
 				handler : function (direction) {
 					$('.sidebar').toggleClass('sticky', direction === 'down')
 				},

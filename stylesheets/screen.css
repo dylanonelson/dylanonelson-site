@@ -236,19 +236,57 @@ html {
 }
 
 /* line 67, ../sass/screen.scss */
+.sidebar {
+  display: block;
+  width: 700px;
+  margin: auto;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+
+/* line 75, ../sass/screen.scss */
+.sidebar.sticky {
+  width: 100%;
+  border-top: 0;
+  background: #fff;
+}
+
+/* line 81, ../sass/screen.scss */
+.sidebar-nav-list {
+  width: 700px;
+  margin: auto;
+}
+
+/* line 86, ../sass/screen.scss */
+.sidebar-nav-list > li {
+  width: 175px;
+  float: left;
+  color: #000;
+  font-family: Concourse;
+  line-height: 1.35;
+}
+/* line 94, ../sass/screen.scss */
+.sidebar-nav-list > li a {
+  display: block;
+  text-align: center;
+  padding: 10px 25px 10px 10px;
+  white-space: no-wrap;
+}
+
+/* line 105, ../sass/screen.scss */
 .main-full {
   background: #fff;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .main {
   display: block;
   margin: auto;
   margin-bottom: 50px;
   font-size: 17.6px;
-  width: 500px;
+  width: 700px;
 }
-/* line 78, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .main h2 {
   font-family: Concourse Caps;
   margin-top: 30px;
@@ -257,7 +295,7 @@ html {
   font-size: 30px;
   text-align: center;
 }
-/* line 87, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .main .about-profile {
   margin: auto;
   margin-bottom: 25px;
@@ -266,61 +304,31 @@ html {
   border-radius: 2px;
   border: 1px solid #888;
 }
-/* line 96, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .main p {
   margin-bottom: 25px;
 }
-/* line 102, ../sass/screen.scss */
-.main .sidebar {
-  display: block;
-  border-top: 1px solid #888;
-  border-bottom: 1px solid #888;
-}
-/* line 108, ../sass/screen.scss */
-.main .sidebar.sticky {
-  border-top: 0;
-  background: #fff;
-}
-/* line 113, ../sass/screen.scss */
-.main .sidebar-nav-list {
-  margin: auto;
-}
-/* line 117, ../sass/screen.scss */
-.main .sidebar-nav-list > li {
-  width: 125px;
-  float: left;
-  color: #000;
-  font-family: Concourse;
-  line-height: 1.35;
-}
-/* line 125, ../sass/screen.scss */
-.main .sidebar-nav-list > li a {
-  display: block;
-  text-align: center;
-  padding: 10px 25px 10px 10px;
-  white-space: no-wrap;
-}
-/* line 136, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .main .body {
   display: block;
   float: left;
   padding: 25px;
-  width: 500px;
+  width: 700px;
   font-family: Concourse;
   color: rgba(0, 0, 0, 0.8);
   text-align: left;
   line-height: 1.35;
 }
-/* line 149, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .main .portfolio-project {
   padding-bottom: 15px;
   border-top: 1px solid #888;
 }
-/* line 152, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .main .portfolio-project img {
   cursor: pointer;
 }
-/* line 157, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .main h3 {
   width: 200px;
   float: left;
@@ -330,24 +338,24 @@ html {
   font-size: 24px;
   font-weight: 700;
 }
-/* line 167, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .main .portfolio-links {
   margin-top: 25px;
   margin-bottom: 15px;
   float: right;
 }
-/* line 173, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .main .portfolio-links-gbf-ebooks {
   width: 200px;
   float: right;
   text-align: right;
 }
-/* line 179, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .main a {
   display: inline-block;
   padding-left: 10px;
 }
-/* line 184, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .main .portfolio-features-list {
   width: 400px;
   margin-left: 25px;
@@ -355,59 +363,64 @@ html {
   list-style-type: circle;
   clear: both;
 }
-/* line 190, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .main .portfolio-features-list li {
   float: left;
   margin-bottom: 5px;
 }
-/* line 197, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .main .portfolio-description {
   clear: both;
 }
-/* line 201, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .main .portfolio-screenshot {
+  width: 315px;
+  float: left;
+  margin: 5px;
   margin-bottom: 15px;
   border-radius: 2px;
   border: 1px solid #888;
 }
-/* line 207, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .main .contact-link-list {
   margin: auto;
   margin-bottom: 350px;
   line-height: 2;
   text-align: center;
 }
-/* line 213, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .main .contact-link-list li {
   text-align: center;
 }
-/* line 217, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .main .contact-link-list a {
   padding: 0;
   text-align: center;
 }
-/* line 222, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .main .back-to-top {
   display: block;
   text-align: center;
 }
 
-/* line 230, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 footer {
-  width: 500px;
+  width: 100%;
   padding: 10px 0;
   margin: auto;
   color: rgba(1, 1, 1, 0.8);
   text-align: left;
   font-size: 14px;
+  text-align: center;
   border-top: 1px solid #888;
   font-family: Concourse;
 }
-/* line 241, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 footer p {
-  width: 375px;
+  margin: auto;
+  width: 700px;
 }
-/* line 244, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 footer a:before {
   content: "";
 }
