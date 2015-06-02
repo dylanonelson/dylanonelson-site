@@ -6,6 +6,7 @@ h1, h2, ul, li, p {
 
   font-family: inherit;
   font-size: inherit;
+  line-height: inherit;
 }
 
 .clearfix:after {
@@ -29,6 +30,14 @@ img {
   max-width: 100%;
 }
 
+a {
+  color: $strong-text-color;
+  font-family: $highlight-font;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: 1.35;
+}
+
 a:before {
   content: "→";
   position: relative;
@@ -45,11 +54,18 @@ a:hover:before {
   opacity: 1;
 }
 
-a#selected {
+a.selected {
   color: $highlight-color;
 }
 
-a#selected:before {
-  color: $highlight-color;
+a.selected:before {
+  content: "→";
+  position: relative;
+  right: 4px;
   opacity: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
 }
