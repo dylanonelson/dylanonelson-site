@@ -179,9 +179,6 @@ html {
   }
 
   .portfolio-links-gbf-ebooks {
-    width: 200px;
-    float: right;
-    text-align: right;
   }
 
   .portfolio-features-list {
@@ -202,12 +199,25 @@ html {
   }
 
   .portfolio-screenshot {
+    position: relative;
     width: ($body-width - 50) / 2 - 10;
     float: left;
     margin: 5px;
     margin-bottom: 15px;
     border-radius: 2px;
     border: 1px solid #888;
+  }
+
+  .portfolio-screenshots-gbf {
+    margin-top: 75px;
+  }
+
+  .screenshot-caption {
+    position: absolute;
+    height: 25px;
+    width: ($body-width - 50) / 2 - 10;
+    top: -45px;
+    text-align: center;
   }
 
   .contact-link-list {

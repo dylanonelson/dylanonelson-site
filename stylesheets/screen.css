@@ -348,13 +348,7 @@ html {
 .main .portfolio-links a {
   padding-left: 10px;
 }
-/* line 181, ../sass/screen.scss */
-.main .portfolio-links-gbf-ebooks {
-  width: 200px;
-  float: right;
-  text-align: right;
-}
-/* line 187, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .main .portfolio-features-list {
   width: 400px;
   margin-left: 25px;
@@ -362,17 +356,18 @@ html {
   list-style-type: circle;
   clear: both;
 }
-/* line 193, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .main .portfolio-features-list li {
   float: left;
   margin-bottom: 5px;
 }
-/* line 200, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .main .portfolio-description {
   clear: both;
 }
-/* line 204, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .main .portfolio-screenshot {
+  position: relative;
   width: 315px;
   float: left;
   margin: 5px;
@@ -380,25 +375,37 @@ html {
   border-radius: 2px;
   border: 1px solid #888;
 }
-/* line 213, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
+.main .portfolio-screenshots-gbf {
+  margin-top: 75px;
+}
+/* line 215, ../sass/screen.scss */
+.main .screenshot-caption {
+  position: absolute;
+  height: 25px;
+  width: 315px;
+  top: -45px;
+  text-align: center;
+}
+/* line 223, ../sass/screen.scss */
 .main .contact-link-list {
   margin: auto;
   margin-bottom: 300px;
   line-height: 2;
   text-align: center;
 }
-/* line 219, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .main .contact-link-list a {
   display: block;
   margin: auto;
   margin-bottom: 15px;
 }
-/* line 226, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .main .back-to-top {
   display: block;
   text-align: center;
 }
-/* line 231, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .main .icon {
   position: relative;
   height: 50px;
@@ -407,7 +414,7 @@ html {
   background-repeat: no-repeat;
   background-size: 486px 425px;
 }
-/* line 240, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .main .icon:hover:after {
   position: absolute;
   width: 100px;
@@ -417,48 +424,48 @@ html {
   text-align: right;
   color: #0C73D7;
 }
-/* line 250, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .main .twitter-icon {
   background-position: 0px 0px;
 }
-/* line 254, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 .main .twitter-icon:hover:after {
   content: "→ Mention";
 }
-/* line 258, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .main .github-icon {
   background-position: -249px -250px;
 }
-/* line 262, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .main .github-icon:hover:after {
   content: "→ Star";
 }
-/* line 266, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .main .gmail-icon {
   background-position: -187px -374px;
 }
-/* line 270, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 .main .gmail-icon:hover:after {
   content: "→ Email";
 }
-/* line 274, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .main .linkedin-icon {
   background-position: -62px -63px;
 }
-/* line 278, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 .main .linkedin-icon:hover:after {
   content: "→ Connect";
 }
-/* line 282, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 .main .resume-icon {
   background-position: -374px -374px;
 }
-/* line 286, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .main .resume-icon:hover:after {
   content: "→ Peruse";
 }
 
-/* line 293, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 footer {
   width: 100%;
   padding: 10px 0;
@@ -470,12 +477,12 @@ footer {
   border-top: 1px solid #888;
   font-family: Concourse;
 }
-/* line 305, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 footer p {
   margin: auto;
   width: 700px;
 }
-/* line 309, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 footer a:before {
   content: "";
 }
