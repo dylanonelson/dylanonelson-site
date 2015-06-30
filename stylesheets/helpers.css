@@ -150,9 +150,10 @@ a {
   font-weight: 300;
   text-transform: lowercase;
   line-height: 1.5;
+  z-index: 1000;
 }
 
-/* line 41, ../sass/_utilities.scss */
+/* line 42, ../sass/_utilities.scss */
 .arrow-link:before {
   content: "→";
   position: relative;
@@ -161,22 +162,22 @@ a {
   transition: opacity 500ms linear;
 }
 
-/* line 49, ../sass/_utilities.scss */
+/* line 50, ../sass/_utilities.scss */
 a:hover {
   color: #0C73D7;
 }
 
-/* line 53, ../sass/_utilities.scss */
+/* line 54, ../sass/_utilities.scss */
 .arrow-link:hover:before {
   opacity: 1;
 }
 
-/* line 57, ../sass/_utilities.scss */
+/* line 58, ../sass/_utilities.scss */
 a.selected {
   color: #0C73D7;
 }
 
-/* line 61, ../sass/_utilities.scss */
+/* line 62, ../sass/_utilities.scss */
 a.selected:before {
   content: "→";
   position: relative;
@@ -184,7 +185,7 @@ a.selected:before {
   opacity: 1;
 }
 
-/* line 68, ../sass/_utilities.scss */
+/* line 69, ../sass/_utilities.scss */
 .sticky {
   position: fixed;
   top: 0;

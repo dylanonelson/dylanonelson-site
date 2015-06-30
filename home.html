@@ -210,7 +210,8 @@
 
 			$('#sidebar-wrapper').waypoint({
 				handler : function (direction) {
-					$('.sidebar').toggleClass('sticky', direction === 'down')
+					$('.sidebar').toggleClass('sticky', direction === 'down');
+					$(this.element).toggleClass('sticky-placeholder', direction === 'down');
 				},
 			})
 
