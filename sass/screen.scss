@@ -39,8 +39,6 @@ html {
     text-transform: lowercase;
     font-size: 44px;
     letter-spacing: 2px;
-
-    // border-top: 4px double $highlight-color;
   }
 
   .close {
@@ -63,6 +61,10 @@ html {
 // =======
 // SIDEBAR
 // =======
+  #sidebar-wrapper {
+    height: $base-font-size * 1.35px;
+    width: 100%;
+  }
   .sidebar {
     display: block;
     width: $body-width;

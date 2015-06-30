@@ -12,14 +12,16 @@
 	</header>
 	
 	<div class="main-full">
-			<nav class="sidebar">
-				<ol class="sidebar-nav-list clearfix">
-					<li><a class="arrow-link" href="#about">About</a></li>
-					<li><a class="arrow-link" href="#portfolio">Portfolio</a></li>
-					<li><a class="arrow-link" href="#contact">Contact</a></li>
-					<li><a class="arrow-link" href="documents/dylan-nelson-resume.pdf" target="_blank">Resume</a></li>
-				</ol>
-			</nav>
+			<div id="sidebar-wrapper">
+				<nav class="sidebar">
+					<ol class="sidebar-nav-list clearfix">
+						<li><a class="arrow-link" href="#about">About</a></li>
+						<li><a class="arrow-link" href="#portfolio">Portfolio</a></li>
+						<li><a class="arrow-link" href="#contact">Contact</a></li>
+						<li><a class="arrow-link" href="documents/dylan-nelson-resume.pdf" target="_blank">Resume</a></li>
+					</ol>
+				</nav>
+			</div>
 		<main class="main clearfix">
 			<section class="body" data-name="about">
 				<h2 class="about">
@@ -206,7 +208,7 @@
 				)
 			})
 
-			$('.main-full').waypoint({
+			$('#sidebar-wrapper').waypoint({
 				handler : function (direction) {
 					$('.sidebar').toggleClass('sticky', direction === 'down')
 				},
