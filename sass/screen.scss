@@ -221,15 +221,22 @@ html {
   }
 
   .contact-link-list {
+    width: 220px;
+    text-align: center;
     margin: auto;
     margin-bottom: 300px;
     line-height: 2;
     text-align: center;
 
+    li {
+      display: inline-block;
+      padding: 10px;
+    }
+
     a {
       display: block;
       margin: auto;
-      margin-bottom: 15px;
+      float: left;
     }
 
   }
@@ -242,26 +249,33 @@ html {
     position: relative;
     height: 50px;
     width: 50px;
+    border-radius: 50%;
     background-image: url('../imgs/social-icons.svg');
     background-repeat: no-repeat;
     background-size: 486px 425px;
   }
 
-  .icon:hover:after {
+  .icon:after {
     position: absolute;
     width: 100px;
-    line-height: 50 / $base-font-size;
-    left: -110px;
-    top: -5px;
-    text-align: right;
+    bottom: $base-font-size * $base-line-height * -1.25px;
+    text-align: center;
     color: $highlight-color;
+    opacity: 0;
+
+    transform: translateX(-54%);
+    transition: opacity 500ms linear;
+  }
+
+  .icon:hover:after {
+    opacity: 1;
   }
 
   .twitter-icon {
     background-position: 0px 0px;
   }
 
-  .twitter-icon:hover:after {
+  .twitter-icon:after {
     content: "→ Mention";
   }
 
@@ -269,7 +283,7 @@ html {
     background-position: -249px -250px;
   }
 
-  .github-icon:hover:after {
+  .github-icon:after {
     content: "→ Fork";
   }
 
@@ -277,7 +291,7 @@ html {
     background-position: -187px -374px;
   }
 
-  .gmail-icon:hover:after {
+  .gmail-icon:after {
     content: "→ Email";
   }
 
@@ -285,7 +299,7 @@ html {
     background-position: -62px -63px;
   }
 
-  .linkedin-icon:hover:after {
+  .linkedin-icon:after {
     content: "→ Connect";
   }
 
@@ -293,8 +307,8 @@ html {
     background-position: -374px -374px;
   }
 
-  .resume-icon:hover:after {
-    content: "→ Peruse";
+  .resume-icon:after {
+    content: "→ Resume";
   }
 }
 // ======
