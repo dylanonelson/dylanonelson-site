@@ -251,17 +251,19 @@ html {
 .sidebar.sticky {
   width: 100%;
   border-top: 0;
+  border-bottom: 0;
   background: #fff;
   z-index: 1000;
+  box-shadow: 0 0 2px #888;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .sidebar-nav-list {
   width: 700px;
   margin: auto;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .sidebar-nav-list > li {
   width: 175px;
   float: left;
@@ -269,7 +271,7 @@ html {
   font-family: Concourse;
   line-height: 1.35;
 }
-/* line 96, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .sidebar-nav-list > li a {
   display: block;
   text-align: center;
@@ -277,12 +279,12 @@ html {
   white-space: no-wrap;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .main-full {
   background: #fff;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .main {
   display: block;
   margin: auto;
@@ -290,7 +292,7 @@ html {
   font-size: 17.6px;
   width: 700px;
 }
-/* line 118, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .main h2 {
   font-family: Concourse Caps;
   margin-top: 30px;
@@ -299,7 +301,7 @@ html {
   font-size: 30px;
   text-align: center;
 }
-/* line 127, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .main .about-profile {
   margin: auto;
   margin-bottom: 25px;
@@ -308,11 +310,11 @@ html {
   border-radius: 50%;
   border: 1px solid #888;
 }
-/* line 136, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .main p {
   margin-bottom: 25px;
 }
-/* line 142, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .main .body {
   display: block;
   float: left;
@@ -323,16 +325,16 @@ html {
   text-align: left;
   line-height: 1.35;
 }
-/* line 155, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .main .portfolio-project {
   padding-bottom: 15px;
   border-bottom: 1px solid #888;
 }
-/* line 158, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .main .portfolio-project img {
   cursor: pointer;
 }
-/* line 163, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .main h3 {
   width: 200px;
   float: left;
@@ -342,17 +344,17 @@ html {
   font-size: 24px;
   font-weight: 700;
 }
-/* line 173, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .main .portfolio-links {
   margin-top: 25px;
   margin-bottom: 15px;
   float: right;
 }
-/* line 179, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .main .portfolio-links a {
   padding-left: 10px;
 }
-/* line 186, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .main .portfolio-features-list {
   width: 400px;
   margin-left: 25px;
@@ -360,16 +362,16 @@ html {
   list-style-type: circle;
   clear: both;
 }
-/* line 192, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .main .portfolio-features-list li {
   float: left;
   margin-bottom: 5px;
 }
-/* line 199, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .main .portfolio-description {
   clear: both;
 }
-/* line 203, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .main .portfolio-screenshot {
   position: relative;
   width: 315px;
@@ -379,11 +381,11 @@ html {
   border-radius: 2px;
   border: 1px solid #888;
 }
-/* line 213, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .main .portfolio-screenshots-gbf {
   margin-top: 75px;
 }
-/* line 217, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .main .screenshot-caption {
   position: absolute;
   height: 25px;
@@ -391,7 +393,7 @@ html {
   top: -45px;
   text-align: center;
 }
-/* line 225, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .main .contact-link-list {
   width: 220px;
   text-align: center;
@@ -400,23 +402,23 @@ html {
   line-height: 2;
   text-align: center;
 }
-/* line 233, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .main .contact-link-list li {
   display: inline-block;
   padding: 10px;
 }
-/* line 238, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .main .contact-link-list a {
   display: block;
   margin: auto;
   float: left;
 }
-/* line 245, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .main .back-to-top {
   display: block;
   text-align: center;
 }
-/* line 250, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .main .icon {
   position: relative;
   height: 50px;
@@ -426,7 +428,7 @@ html {
   background-repeat: no-repeat;
   background-size: 486px 425px;
 }
-/* line 260, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .main .icon:after {
   position: absolute;
   width: 100px;
@@ -437,52 +439,52 @@ html {
   transform: translateX(-54%);
   transition: opacity 500ms linear;
 }
-/* line 272, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .main .icon:hover:after {
   opacity: 1;
 }
-/* line 276, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .main .twitter-icon {
   background-position: 0px 0px;
 }
-/* line 280, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .main .twitter-icon:after {
   content: "→ Mention";
 }
-/* line 284, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 .main .github-icon {
   background-position: -249px -250px;
 }
-/* line 288, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 .main .github-icon:after {
   content: "→ Fork";
 }
-/* line 292, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .main .gmail-icon {
   background-position: -187px -374px;
 }
-/* line 296, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .main .gmail-icon:after {
   content: "→ Email";
 }
-/* line 300, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 .main .linkedin-icon {
   background-position: -62px -63px;
 }
-/* line 304, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .main .linkedin-icon:after {
   content: "→ Connect";
 }
-/* line 308, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .main .resume-icon {
   background-position: -374px -374px;
 }
-/* line 312, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .main .resume-icon:after {
   content: "→ Resume";
 }
 
-/* line 319, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 footer {
   width: 100%;
   padding: 10px 0;
@@ -494,12 +496,12 @@ footer {
   border-top: 1px solid #888;
   font-family: Concourse;
 }
-/* line 331, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 footer p {
   margin: auto;
   width: 700px;
 }
-/* line 335, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 footer a:before {
   content: "";
 }
