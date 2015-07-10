@@ -566,38 +566,42 @@ footer a:before {
     padding-right: 10px;
   }
   /* line 46, ../sass/_mobile.scss */
+  .main .portfolio-features-list {
+    width: 85%;
+  }
+  /* line 50, ../sass/_mobile.scss */
   .main .portfolio-screenshot {
     display: block;
     float: none;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 53, ../sass/_mobile.scss */
+  /* line 57, ../sass/_mobile.scss */
   .main .first-great-books-screenshot {
     margin-bottom: 60px;
   }
-  /* line 57, ../sass/_mobile.scss */
+  /* line 61, ../sass/_mobile.scss */
   .main .contact-link-list {
     margin-bottom: 250px;
   }
-  /* line 61, ../sass/_mobile.scss */
+  /* line 65, ../sass/_mobile.scss */
   .main .contact-link-list li {
     display: block;
     width: 100%;
     padding: 0;
     margin-bottom: 50px;
   }
-  /* line 68, ../sass/_mobile.scss */
+  /* line 72, ../sass/_mobile.scss */
   .main .contact-link-list a {
     float: none;
   }
-  /* line 72, ../sass/_mobile.scss */
+  /* line 76, ../sass/_mobile.scss */
   .main .icon:after {
     opacity: 1;
   }
 
-  /* line 77, ../sass/_mobile.scss */
+  /* line 81, ../sass/_mobile.scss */
   footer p {
-    width: 100%;
+    width: 75%;
   }
 }
