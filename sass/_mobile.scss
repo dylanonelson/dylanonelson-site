@@ -1,0 +1,81 @@
+@media (max-width : 700px),
+       (max-device-width : 480px) {
+
+  .arrow-link:before {
+    content: "";
+  }
+
+  .header .close {
+    display: none;
+  }
+
+  #sidebar-wrapper {
+    height: 178px;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .sidebar-nav-list {
+    width: 100%;
+  }
+  .sidebar-nav-list > li {
+    width: 50%;
+  }
+  .main {
+    width: 100%;
+
+    .body {
+      width: 100%;
+    }
+
+    h3 {
+      width: 100%;
+    }
+
+    .portfolio-links {
+      margin-top: 0;
+      margin-bottom: 30px;
+      float: left;
+
+      a {
+        padding-left: 0;
+        padding-right: 10px;
+      }
+    }
+
+    .portfolio-screenshot {
+      display: block;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .first-great-books-screenshot {
+      margin-bottom: 60px;
+    }
+
+    .contact-link-list {
+      margin-bottom: 250px;
+    }
+
+    .contact-link-list li {
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 50px;
+    }
+
+    .contact-link-list a {
+      float: none;
+    }
+
+    .icon:after {
+      opacity: 1;
+    }
+  }
+  footer {
+    p {
+      width: 100%;
+    }
+  }
+}

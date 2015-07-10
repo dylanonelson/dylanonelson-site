@@ -12,6 +12,7 @@
 html {
   text-align: justify;
   box-sizing: border-box;
+  font-size: $base-font-size * 1px;
 }
 
 // ======
@@ -84,7 +85,7 @@ html {
 
   .sidebar-nav-list {
     width: $body-width;
-    margin: auto;
+    margin: 0;
   }
 
   .sidebar-nav-list > li {
@@ -341,3 +342,5 @@ footer {
     content: "";
   }
 }
+
+@import "mobile";
