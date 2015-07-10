@@ -262,7 +262,7 @@ html {
 /* line 86, ../sass/screen.scss */
 .sidebar-nav-list {
   width: 700px;
-  margin: 0;
+  margin: auto;
 }
 
 /* line 91, ../sass/screen.scss */
