@@ -1,84 +1,62 @@
-@media (max-width : 700px) {
+@media (max-width : 900px) {
 
-  .arrow-link:before {
-    content: "";
+  section {
+    height: auto;
+    min-height: 100%;
   }
 
-  .header .close {
-    display: none;
+  section:first-child {
+    padding-bottom: 25px;
   }
 
-  #sidebar-wrapper {
-    height: 178px;
+  section:last-child {
+    padding-top: 15px;
   }
-  .sidebar {
-    width: 100%;
+
+  div.center {
+    width: auto;
+    padding: 35px;
+    position: static;
+    top: 0;
+    left: 0;
+    transform: none;
   }
-  .sidebar-nav-list {
-    width: 100%;
+
+  #about div.center {
+    width: auto;
   }
-  .sidebar-nav-list > li {
-    width: 50%;
-  }
-  .main {
-    width: 100%;
 
-    .body {
-      width: 100%;
-    }
+  h1 {
+    font-size: 36px;
+    line-height: 1.1;
 
-    h3 {
-      width: 100%;
-    }
-
-    .portfolio-links {
-      margin-top: 0;
-      margin-bottom: 30px;
-      float: left;
-
-      a {
-        padding-left: 0;
-        padding-right: 10px;
-      }
-    }
-
-    .portfolio-features-list {
-      width: 85%;
-    }
-
-    .portfolio-screenshot {
-      display: block;
-      float: none;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .first-great-books-screenshot {
-      margin-bottom: 60px;
-    }
-
-    .contact-link-list {
-      margin-bottom: 250px;
-    }
-
-    .contact-link-list li {
-      display: block;
-      width: 100%;
-      padding: 0;
-      margin-bottom: 50px;
-    }
-
-    .contact-link-list a {
-      float: none;
-    }
-
-    .icon:after {
-      opacity: 1;
+    span {
+      display: none;
     }
   }
-  footer {
-    p {
-      width: 75%;
-    }
+
+  h2 {
+    font-size: $base-font-size;
   }
+
+  #top img {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+
+  article {
+    margin: 20px auto;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
 }
+
+//@media (max-height : 400px) {
+//  article {
+//    width: 45%;
+//  }
+//}
