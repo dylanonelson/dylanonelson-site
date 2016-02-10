@@ -147,38 +147,43 @@ html, body {
 }
 
 /* line 13, ../sass/screen.scss */
+html {
+  background: #eee;
+}
+
+/* line 17, ../sass/screen.scss */
 section {
   position: relative;
   height: 100%;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 nav {
   display: flex;
   justify-content: center;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 ol {
   display: flex;
   margin: 0 auto;
   padding: 30px 0;
 }
-/* line 28, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 ol li {
   border-right: 1px solid #ccc;
 }
-/* line 31, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 ol li:last-child {
   border-right: none;
 }
-/* line 35, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 ol li a {
   font-size: 18;
   padding: 5px 25px;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 div.center {
   position: absolute;
   top: 50%;
@@ -186,7 +191,12 @@ div.center {
   transform: translateX(-50%) translateY(-50%);
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
+#top {
+  background: #fff;
+}
+
+/* line 57, ../sass/screen.scss */
 #top img {
   height: 150px;
   width: auto;
@@ -195,44 +205,44 @@ div.center {
   margin: auto;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 h1 {
   text-align: center;
   text-transform: lowercase;
   font-size: 48px;
 }
-/* line 62, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 h1 span {
   letter-spacing: -6px;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 h2 {
   text-align: center;
   margin: 10px;
   font-size: 24px;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 #about {
   background: #eee;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 #about div.center {
   width: 900px;
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 article {
   width: 350px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 h3 {
   font-size: 24px;
   color: #0C73D7;
@@ -241,12 +251,17 @@ h3 {
   margin-bottom: 15px;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 p {
   font-size: 20px;
 }
 
-@media (max-width: 900px) {
+/* line 109, ../sass/screen.scss */
+span.nowrap {
+  white-space: nowrap;
+}
+
+@media (max-width: 850px) {
   /* line 3, ../sass/_mobile.scss */
   section {
     height: auto;
@@ -265,7 +280,7 @@ p {
   /* line 15, ../sass/_mobile.scss */
   div.center {
     width: auto;
-    padding: 35px;
+    padding: 95px 35px 65px 35px;
     position: static;
     top: 0;
     left: 0;
