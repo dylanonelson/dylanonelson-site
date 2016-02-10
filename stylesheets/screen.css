@@ -250,20 +250,19 @@ p {
   /* line 3, ../sass/_mobile.scss */
   section {
     height: auto;
-    min-height: 100%;
   }
 
-  /* line 8, ../sass/_mobile.scss */
+  /* line 7, ../sass/_mobile.scss */
   section:first-child {
     padding-bottom: 25px;
   }
 
-  /* line 12, ../sass/_mobile.scss */
+  /* line 11, ../sass/_mobile.scss */
   section:last-child {
     padding-top: 15px;
   }
 
-  /* line 16, ../sass/_mobile.scss */
+  /* line 15, ../sass/_mobile.scss */
   div.center {
     width: auto;
     padding: 35px;
@@ -273,38 +272,38 @@ p {
     transform: none;
   }
 
-  /* line 25, ../sass/_mobile.scss */
+  /* line 24, ../sass/_mobile.scss */
   #about div.center {
     width: auto;
   }
 
-  /* line 29, ../sass/_mobile.scss */
+  /* line 28, ../sass/_mobile.scss */
   h1 {
     font-size: 36px;
     line-height: 1.1;
   }
-  /* line 33, ../sass/_mobile.scss */
+  /* line 32, ../sass/_mobile.scss */
   h1 span {
     display: none;
   }
 
-  /* line 38, ../sass/_mobile.scss */
+  /* line 37, ../sass/_mobile.scss */
   h2 {
     font-size: 18;
   }
 
-  /* line 42, ../sass/_mobile.scss */
+  /* line 41, ../sass/_mobile.scss */
   #top img {
     height: 100px;
     margin-bottom: 10px;
   }
 
-  /* line 48, ../sass/_mobile.scss */
+  /* line 47, ../sass/_mobile.scss */
   article {
     margin: 20px auto;
   }
 
-  /* line 52, ../sass/_mobile.scss */
+  /* line 51, ../sass/_mobile.scss */
   p {
     font-size: 18px;
   }
