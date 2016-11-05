@@ -1,0 +1,22 @@
+{
+  "name": "dylanonelson-site",
+  "version": "1.0.0",
+  "description": "Dylan Nelson's personal website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanonelson/dylanonelson-site.git"
+  },
+  "author": "Dylan Nelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylanonelson/dylanonelson-site/issues"
+  },
+  "homepage": "https://github.com/dylanonelson/dylanonelson-site#readme",
+  "dependencies": {
+    "next": "^1.1.0"
+  }
+}

@@ -1,4 +1,8 @@
-.sass-cache/
-.git/
-fonts/
+*.*.sw?
 *.css
+.git/
+.next/
+.sass-cache/
+.sw?
+fonts/
+node_modules/
