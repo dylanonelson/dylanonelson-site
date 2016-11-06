@@ -1,5 +1,5 @@
 import React from 'react';
-import css from 'next/css';
+import { style } from 'glamor';
 
 const name =
 `
@@ -23,10 +23,10 @@ const name =
 `;
 
 const styles = {
-  name: css({
+  name: style({
     display: 'inline-block',
   }),
-  container: css({
+  container: style({
     textAlign: 'center'
   }),
 };

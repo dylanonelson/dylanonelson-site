@@ -1,19 +1,19 @@
 import React from 'react';
 import Link from './Link';
-import css from 'next/css';
+import { style } from 'glamor';
 
 const styles = {
-  nav: css({
+  nav: style({
     width: '25%',
     margin: 'auto',
     textAlign: 'center',
     paddingTop: 50,
   }),
-  ul: css({
+  ul: style({
     listStyle: 'none',
     padding: 0,
   }),
-  h2: css({
+  h2: style({
     fontWeight: 300
   }),
 }

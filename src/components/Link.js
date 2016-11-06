@@ -1,13 +1,13 @@
 import React from 'react';
-import css from 'next/css';
+import { style } from 'glamor';
 
 const styles = {
-  a: css({
+  a: style({
     display: 'block',
     color: 'blue',
     fontSize: 16,
   }),
-  li: css({
+  li: style({
     padding: 5,
   }),
 };

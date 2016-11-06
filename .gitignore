@@ -4,5 +4,6 @@
 .next/
 .sass-cache/
 .sw?
+dist/*bundle*
 fonts/
 node_modules/
