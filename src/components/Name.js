@@ -1,5 +1,4 @@
 import React from 'react';
-import { style } from 'glamor';
 
 const name =
 `
@@ -23,17 +22,17 @@ const name =
 `;
 
 const styles = {
-  name: style({
+  name: {
     display: 'inline-block',
-  }),
-  container: style({
+  },
+  container: {
     textAlign: 'center'
-  }),
+  },
 };
 
 const Name = () => (
-  <div className={styles.container}>
-    <pre className={styles.name}>
+  <div style={styles.container}>>
+    <pre style={styles.name}>>
       {name}
     </pre>
   </div>

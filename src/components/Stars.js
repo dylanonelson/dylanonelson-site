@@ -1,52 +1,18 @@
 import React from 'react';
-import { style } from 'glamor';
+import Star from './Star';
 
-const randomPos = () => (
-  Math.floor(
-    Math.random() * 100
-  )
-)
-
-const styles = () => ({
-  star: style({
-    position: 'absolute',
-    top: `${randomPos()}vh`,
-    left: `${randomPos()}vw`,
-    opacity: '.75',
-  })
-})
+const getStars = () => {
+  const stars = [];
+  for (var i = 0; i < 25; i++) {
+    stars.push(
+      <Star key={i} />
+    );
+  }
+  return stars;
+}
 
 const Stars = () => (
-  <div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-    <div className={styles().star}>*</div>
-  </div>
+  <ul>{getStars()}</ul>
 )
 
 export default Stars;

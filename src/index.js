@@ -4,27 +4,39 @@ import Links from './components/Links';
 import Name from './components/Name';
 import Stars from './components/Stars';
 import Title from './components/Title';
-import { style } from 'glamor';
-import 'glamor/reset';
 
-const styles = style({
+const styles = {
   background: '#073642',
   color: '#93a1a1',
   fontFamily: 'monospace',
-  height: '100vh',
+  minHeight: '100vh',
+  minWidth: '100wh',
   paddingTop: 50,
-});
+};
 
+class Main extends React.Component {
+  render() {
+    return (
+      <main style={styles}>
+        <Name />
+        <Title />
+        <Links />
+        <Stars />
+      </main>
+    )
+  }
+}
 
-const Main = () => (
-  <main className={styles}>
-    <Name />
-    <Title />
-    <Links />
-    <Stars />
-  </main>
-)
+let inBrowser = true;
 
-document.addEventListener('DOMContentLoaded', () => (
-  ReactDOM.render(<Main />, document.getElementById('root'))
-));
+try { document.body }
+catch (e) { inBrowser = false }
+finally {
+  if (inBrowser) {
+    document.addEventListener('DOMContentLoaded', () => {
+      ReactDOM.render(<Main />, document.getElementById('root'));
+    })
+  }
+}
+
+module.exports = Main;

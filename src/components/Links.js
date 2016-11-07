@@ -1,29 +1,28 @@
 import React from 'react';
 import Link from './Link';
-import { style } from 'glamor';
 
 const styles = {
-  nav: style({
+  nav: {
     width: '25%',
     margin: 'auto',
     textAlign: 'center',
     paddingTop: 50,
-  }),
-  ul: style({
+  },
+  ul: {
     listStyle: 'none',
     padding: 0,
-  }),
-  h2: style({
+  },
+  h2: {
     fontWeight: 300
-  }),
+  },
 }
 
 const Links = () => (
-  <nav className={styles.nav} >
-    <h2 className={styles.h2}>
+  <nav style={styles.nav} >
+    <h2 style={styles.h2}>
       Click here.
     </h2>
-    <ul className={styles.ul}>
+    <ul style={styles.ul}>
       <Link
         name="GitHub"
         href="https://github.com/dylanonelson"

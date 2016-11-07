@@ -1,22 +1,21 @@
 import React from 'react';
-import { style } from 'glamor';
 
 const styles = {
-  a: style({
+  a: {
     display: 'block',
     color: 'blue',
     fontSize: 16,
-  }),
-  li: style({
+  },
+  li: {
     padding: 5,
-  }),
+  },
 };
 
 const Link = ({ name, href }) => (
-  <li className={styles.li}>
+  <li style={styles.li}>
     <a
       href={href}
-      className={styles.a}
+      style={styles.a}
     >
       {name}
     </a>
