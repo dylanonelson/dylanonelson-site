@@ -31,8 +31,8 @@ const styles = {
 };
 
 const Name = () => (
-  <div style={styles.container}>>
-    <pre style={styles.name}>>
+  <div style={styles.container}>
+    <pre style={styles.name}>
       {name}
     </pre>
   </div>

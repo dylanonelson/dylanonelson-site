@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Dylan Nelson's personal website",
   "main": "index.js",
+  "engines": {
+    "node": "4.4.7"
+  },
   "scripts": {
     "build:client": "webpack --colors --progress",
     "dev": "npm run dev:server & npm run dev:client",
     "dev:server": "nodemon .",
     "dev:client": "webpack --colors --progress --watch",
-    "start": "node ."
+    "start": "npm run build:client && node ."
   },
   "repository": {
     "type": "git",
@@ -29,7 +32,6 @@
     "express": "^4.14.0",
     "hbs": "^4.0.1",
     "nconf": "^0.8.4",
-    "next": "^1.1.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "webpack": "^1.13.3"
