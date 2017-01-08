@@ -6,10 +6,35 @@ import Name from './components/Name';
 import Stars from './components/Stars';
 import Title from './components/Title';
 
+const fonts = [
+  '"Triplicate T4c"',
+  'Anonymous Pro',
+  'Profont',
+  'Monofur',
+  'Proggy',
+  '"Droid Sans Mono"',
+  '"Deja Vu Sans Mono"',
+  'Consolas',
+  'Inconsolata',
+  'Courier',
+  '"Apercu Mono"',
+  '"Maison Mono"',
+  '"GT Pressura Mono"',
+  'Nitti',
+  '"Letter Gothic"',
+  '"Pica 10 Pitch"',
+  'Pitch',
+  'Source Code Pro',
+  'Menlo',
+  'Ubuntu Mono',
+  '"Andale Mono"',
+  'monospace',
+];
+
 const styles = {
   background: '#073642',
   color: '#93a1a1',
-  fontFamily: 'monospace',
+  fontFamily: fonts.join(', '),
   height: '100%',
   minHeight: '100vh',
   minWidth: '100vw',

@@ -18,7 +18,6 @@ class Title extends React.Component {
       color: '#268bd2',
       display: 'block',
       opacity: this.state.hidden ? '0' : '1',
-      fontFamily: 'monospace',
       fontSize: 22,
       lineHeight: 3,
       textAlign: 'center',
