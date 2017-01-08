@@ -37,7 +37,6 @@ const styles = {
   fontFamily: fonts.join(', '),
   height: '100%',
   minHeight: '100vh',
-  minWidth: '100vw',
   width: '100%',
   paddingTop: 50,
 };

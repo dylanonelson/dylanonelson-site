@@ -25,6 +25,7 @@ class Star extends React.Component {
       left: `${this.state.x}vw`,
       listStyle: 'none',
       opacity: '.75',
+      overflowX: 'hidden',
       position: 'absolute',
       top: `${this.state.y}vh`,
     }
