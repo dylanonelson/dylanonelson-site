@@ -13,7 +13,7 @@ const fonts = [
   'Monofur',
   'Proggy',
   '"Droid Sans Mono"',
-  '"Deja Vu Sans Mono"',
+  '"DejaVu Sans Mono"',
   'Consolas',
   'Inconsolata',
   'Courier',
