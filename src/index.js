@@ -9,8 +9,9 @@ const styles = {
   background: '#073642',
   color: '#93a1a1',
   fontFamily: 'monospace',
+  height: '100%',
   minHeight: '100vh',
-  minWidth: '100wh',
+  minWidth: '100vh',
   paddingTop: 50,
 };
 
