@@ -21,7 +21,22 @@ const name =
                                                                  
 `;
 
+const initials = 
+`
+   /DDDDD    /NN   /NN 
+  | DD  DD  | NNNN  NN 
+  | DD  DD  | NN NN NN 
+  | DD  DD  | NN  NNNN 
+  | DD  DD  | NN \\  NN 
+  | DDDDD   | NN  | NN 
+  |____/    |__/  |__/ 
+`
+
 const styles = {
+  fullName: {
+    fontSize: 26,
+    fontWeight: 300,
+  },
   name: {
     display: 'inline-block',
   },
@@ -30,11 +45,12 @@ const styles = {
   },
 };
 
-const Name = () => (
+const Name = ({ mobile }) => (
   <div style={styles.container}>
     <pre style={styles.name}>
-      {name}
+      {mobile ? initials : name}
     </pre>
+    {mobile ? <h3 style={styles.fullName}>DYLAN NELSON</h3> : null}
   </div>
 );
 

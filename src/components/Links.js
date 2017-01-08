@@ -17,10 +17,10 @@ const styles = {
   },
 }
 
-const Links = () => (
+const Links = ({ mobile }) => (
   <nav style={styles.nav} >
     <h2 style={styles.h2}>
-      Click here.
+      {mobile ? null : 'Click here.'}
     </h2>
     <ul style={styles.ul}>
       <Link

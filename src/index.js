@@ -1,3 +1,4 @@
+import MobileDetect from 'mobile-detect';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Links from './components/Links';
@@ -11,7 +12,8 @@ const styles = {
   fontFamily: 'monospace',
   height: '100%',
   minHeight: '100vh',
-  minWidth: '100vh',
+  minWidth: '100vw',
+  width: '100%',
   paddingTop: 50,
 };
 
@@ -19,9 +21,15 @@ class Main extends React.Component {
   render() {
     return (
       <main style={styles}>
-        <Name />
-        <Title />
-        <Links />
+        <Name
+          mobile={this.props.mobile}
+        />
+        <Title
+          mobile={this.props.mobile}
+        />
+        <Links
+          mobile={this.props.mobile}
+        />
         <Stars />
       </main>
     )
@@ -34,8 +42,15 @@ try { document.body }
 catch (e) { inBrowser = false }
 finally {
   if (inBrowser) {
+    var mobileDetect = new MobileDetect(window.navigator.userAgent);
+
     document.addEventListener('DOMContentLoaded', () => {
-      ReactDOM.render(<Main />, document.getElementById('root'));
+      ReactDOM.render(
+        <Main
+          mobile={mobileDetect.phone() !== null}
+        />,
+        document.getElementById('root')
+      );
     })
   }
 }
