@@ -22,7 +22,7 @@ class Star extends React.Component {
 
   getStyle() {
     return {
-      left: `${this.state.x}vw`,
+      left: `${this.state.x}%`,
       listStyle: 'none',
       opacity: '.75',
       position: 'absolute',
