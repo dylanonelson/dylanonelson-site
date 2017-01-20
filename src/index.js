@@ -8,18 +8,7 @@ import Title from './components/Title';
 
 const fonts = [
   '"Triplicate T4c"',
-  'Anonymous Pro',
-  'Profont',
-  'Monofur',
-  'Proggy',
-  '"Droid Sans Mono"',
-  '"DejaVu Sans Mono"',
-  'Consolas',
-  'Inconsolata',
   'Courier',
-  '"Apercu Mono"',
-  '"Maison Mono"',
-  '"GT Pressura Mono"',
   'Nitti',
   '"Letter Gothic"',
   '"Pica 10 Pitch"',
