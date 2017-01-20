@@ -4,6 +4,7 @@ var webpack = require('webpack');
 var config = require('./config');
 
 module.exports = {
+  devtool: 'source-map',
   entry: './src/index.js',
   module: {
     loaders: [{
