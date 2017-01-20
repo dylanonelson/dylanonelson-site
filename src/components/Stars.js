@@ -1,6 +1,8 @@
 import React from 'react';
 import Star from './Star';
 
+const style = { overflowX: 'hidden' };
+
 const getStars = () => {
   const stars = [];
   for (var i = 0; i < 25; i++) {
@@ -12,7 +14,7 @@ const getStars = () => {
 }
 
 const Stars = () => (
-  <ul>{getStars()}</ul>
+  <ul style={style}>{getStars()}</ul>
 )
 
 export default Stars;
