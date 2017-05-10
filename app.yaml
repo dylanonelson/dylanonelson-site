@@ -1,9 +1,0 @@
-# gcloud config
-runtime: nodejs
-vm: true
-
-skip_files:
- - ^node_modules$
-
-env_variables:
-  NODE_ENV: 'production'
