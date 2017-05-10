@@ -5,4 +5,4 @@ require('babel-register')({
 const app = require('./server');
 const config = require('./config');
 
-app.listen(config.get('PORT'));
+app.listen(process.env.PORT || config.get('PORT'));

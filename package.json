@@ -11,7 +11,7 @@
     "dev": "npm run dev:server & npm run dev:client",
     "dev:server": "nodemon .",
     "dev:client": "webpack --colors --progress --watch",
-    "start": "npm run build:client && node ."
+    "start": "NODE_ENV=prd npm run build:client && PORT=80 node ."
   },
   "repository": {
     "type": "git",
