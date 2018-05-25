@@ -1,16 +1,18 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
-var config = require('./config');
+const config = require('./config');
 
 module.exports = {
   devtool: 'source-map',
   entry: './src/index.js',
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js$/,
       exclude: /node_modules/,
-      loader: 'babel-loader'
+      use: [{
+        loader: 'babel-loader'
+      }]
     }],
   },
   output: {
@@ -25,6 +27,9 @@ module.exports = {
     }),
   ],
   resolve: {
-    root: path.resolve('./src')
+    modules: [
+      path.resolve('./src'),
+      path.resolve('./node_modules'),
+    ]
   },
 }
