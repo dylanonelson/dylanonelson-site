@@ -32,8 +32,8 @@ const Links = ({ mobile }) => (
         href="https://www.linkedin.com/in/dylan-nelson-b00b2133"
       />
       <Link
-        name="Twitter"
-        href="https://twitter.com/dylanonelson"
+        name="resume"
+        href="/dylan-nelson-resume.pdf"
       />
     </ul>
   </nav>
