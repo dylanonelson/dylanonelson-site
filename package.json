@@ -1,0 +1,25 @@
+{
+  "name": "dylanonelson-site",
+  "version": "2.0.0",
+  "description": "Dylan Nelson's personal website",
+  "engines": {
+    "node": "5.4.7"
+  },
+  "scripts": {
+    "build": "html-minifier --output-dir dist --input-dir src --collapse-whitespace --minify-css --process-scripts=text/javascript",
+    "serve": "http-server dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanonelson/dylanonelson-site.git"
+  },
+  "author": "Dylan Nelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylanonelson/dylanonelson-site/issues"
+  },
+  "homepage": "https://github.com/dylanonelson/dylanonelson-site#readme",
+  "devDependencies": {
+    "html-minifier": "^4.0.0"
+  }
+}

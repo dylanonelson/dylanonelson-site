@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -81,10 +82,8 @@
     }
 </style>
 <body>
-    <div id="root">
-        <main class="main">
-            <div class="name-container">
-
+  <main class="main">
+      <div class="name-container">
 <pre class="full">
      /DDDDD   /DD    DD  /DD       / DDD     /DD   /DD       
     | DD  DD  \ DD  DD  | DD      / D   D   | DDDD  DD       
@@ -113,66 +112,62 @@
 | DDDDD   | NN  | NN 
 |____/    |__/  |__/ 
 </pre>
-            </div>
-            
-            <p class="title"><blink>Web Developer</blink></p>
+      </div>
+      <p class="title"><blink>Web Developer</blink></p>
 
-            <nav>
-                <h2 class="list-head">Click here.</h2>
-                <ul class="link-list">
-                    <li><a href="https://github.com/dylanonelson">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/dylan-nelson-b00b2133">LinkedIn</a></li>
-                    <li><a href="/dylan-nelson-resume.pdf">resume</a></li>
-                </ul>
-            </nav>
-            <ul class="star-list">
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-            </ul>
-        </main>
-    </div>
-<script>
-    const stars = document.querySelectorAll('.star-list li')
-    for (let i = 0; i < stars.length; i += 1) {
-        const star = stars[i];
-        const top = Math.random() * 100;
-        const left = Math.random() * 100;
-        star.style.left = `${left}%`;
-        star.style.top = `${top}%`;
-    }
-
-    function toggleTitleOpacity(visible = true) {
-        const titleP = document.querySelector('.title');
-        titleP.style.opacity = visible ? 1 : 0;
-        setTimeout(() => {
-            toggleTitleOpacity(!visible);
-        }, 650)
-    }
-
-    toggleTitleOpacity();
-</script>
+      <nav>
+          <h2 class="list-head">Click here.</h2>
+          <ul class="link-list">
+              <li><a href="https://github.com/dylanonelson">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/dylan-nelson-b00b2133">LinkedIn</a></li>
+              <li><a href="/dylan-nelson-resume.pdf">resume</a></li>
+          </ul>
+      </nav>
+      <ul class="star-list">
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+      </ul>
+  </main>
+  <script type="text/javascript">
+      const stars = Array.from(document.querySelectorAll('.star-list li'));
+      while (stars.length) {
+          const star = stars.pop();
+          const top = Math.random() * 100;
+          const left = Math.random() * 100;
+          star.style.left = `${left}%`;
+          star.style.top = `${top}%`;
+      }
+      function toggleTitleOpacity(visible = true) {
+          const titleP = document.querySelector('.title');
+          titleP.style.opacity = visible ? 1 : 0;
+          setTimeout(function () {
+              toggleTitleOpacity(!visible);
+          }, 650)
+      }
+      toggleTitleOpacity();
+  </script>
 </body>
 </html>
