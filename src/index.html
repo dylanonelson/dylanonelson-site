@@ -1,0 +1,178 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    html {
+        background: #073642;
+        height: 100%;
+        width: 100%;
+    }
+    body {
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+    * {
+        font-family: inherit;
+    }
+    ul {
+        list-style:  none;
+        padding:  0;
+    }
+    .main {
+        color: #93a1a1;
+        font-family: 'Triplicate T4c', Courier, Nitti, 'Letter Gothic', 'Pica 10 Pitch', Pitch, 'Source Code Pro', Menlo, 'Ubuntu Mono', 'Andale Mono', monospace;
+        min-height:100%;
+        width:100%;
+        display:  flex;
+        align-items:  center;
+        justify-content: center;
+        flex-direction:  column;
+        position:  relative;
+    }
+    .title {
+        color: rgb(38, 139, 210);
+        display: block; opacity: 0;
+        font-size: 22px;
+        line-height: 3;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .list-head {
+        font-weight: 300;
+        text-align:  center;
+    }
+    .link-list li {
+        display: block;
+        font-size:  16px;
+        padding:  5px;
+        text-align:  center;
+    }
+    .link-list li a {
+        color:  blue;
+    }
+    .star-list {
+        position: absolute;
+        top:  0;
+        bottom:  0;
+        right:  0;
+        left:  0;
+        margin:  0;
+        overflow: hidden;
+    }
+    .star-list li {
+        opacity:  0.75;
+        position:  absolute;
+    }
+    .full, .initials {
+        display:  none;
+    }
+    @media(max-width: 750px) {
+        .initials {
+            display:  block;
+        }
+    }
+    @media(min-width: 750px) {
+        .full {
+            display:  block;
+        }
+    }
+</style>
+<body>
+    <div id="root">
+        <main class="main">
+            <div class="name-container">
+
+<pre class="full">
+     /DDDDD   /DD    DD  /DD       / DDD     /DD   /DD       
+    | DD  DD  \ DD  DD  | DD      / D   D   | DDDD  DD       
+    | DD  DD   \ DDDD   | DD     | DD   DD  | DD DD DD       
+    | DD  DD    | DD    | DD     | DDDDDDD  | DD  DDDD       
+    | DD  DD    | DD    | DD     | DD _ DD  | DD \  DD       
+    | DDDDD     | DD    | DDDDD  | DD | DD  | DD  | DD       
+    |____/      |_/     |____/   |__/ |__/  |__/  |__/       
+                                                             
+                                                             
+ /NN   /NN   /NNNNN   /NN       NNNN    / NNNN    /NN   /NN  
+| NNNN  NN  | NN  /  | NN     /NN  NN  | NN  NN  | NNNN  NN  
+| NN NN NN  | NNNNN  | NN     \ NN _/  | NN  NN  | NN NN NN  
+| NN  NNNN  | NN__/  | NN      \  NN   | NN  NN  | NN  NNNN  
+| NN \  NN  | NN     | NN     /NN  NN  | NN  NN  | NN \  NN  
+| NN  | NN  | NNNNN  | NNNNN  \ NNNN    \ NNNN   | NN  | NN  
+|__/  |__/  |_____/  |____/    \___/     \___/   |__/  |__/  
+                                                             
+</pre>
+<pre class="initials">
+ /DDDDD    /NN   /NN 
+| DD  DD  | NNNN  NN 
+| DD  DD  | NN NN NN 
+| DD  DD  | NN  NNNN 
+| DD  DD  | NN \  NN 
+| DDDDD   | NN  | NN 
+|____/    |__/  |__/ 
+</pre>
+            </div>
+            
+            <p class="title"><blink>Web Developer</blink></p>
+
+            <nav>
+                <h2 class="list-head">Click here.</h2>
+                <ul class="link-list">
+                    <li><a href="https://github.com/dylanonelson">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/dylan-nelson-b00b2133">LinkedIn</a></li>
+                    <li><a href="/dylan-nelson-resume.pdf">resume</a></li>
+                </ul>
+            </nav>
+            <ul class="star-list">
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+            </ul>
+        </main>
+    </div>
+<script>
+    const stars = document.querySelectorAll('.star-list li')
+    for (let i = 0; i < stars.length; i += 1) {
+        const star = stars[i];
+        const top = Math.random() * 100;
+        const left = Math.random() * 100;
+        star.style.left = `${left}%`;
+        star.style.top = `${top}%`;
+    }
+
+    function toggleTitleOpacity(visible = true) {
+        const titleP = document.querySelector('.title');
+        titleP.style.opacity = visible ? 1 : 0;
+        setTimeout(() => {
+            toggleTitleOpacity(!visible);
+        }, 650)
+    }
+
+    toggleTitleOpacity();
+</script>
+</body>
+</html>

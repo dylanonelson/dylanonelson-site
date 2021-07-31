@@ -1,9 +1,4 @@
 *.*.sw?
-*.css
 .git/
-.next/
-.sass-cache/
 .sw?
-dist/*bundle*
-fonts/
-node_modules/
+dist
