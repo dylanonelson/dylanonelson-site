@@ -7,7 +7,9 @@
   },
   "scripts": {
     "build": "html-minifier --output-dir dist --input-dir src --collapse-whitespace --minify-css --process-scripts=text/javascript",
-    "serve": "http-server dist"
+    "open": "open dist/index.html",
+    "serve": "http-server dist",
+    "watch": "chokidar src/index.html -c \"npm run build\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,8 @@
   },
   "homepage": "https://github.com/dylanonelson/dylanonelson-site#readme",
   "devDependencies": {
-    "html-minifier": "^4.0.0"
+    "chokidar-cli": "^3.0.0",
+    "html-minifier": "^4.0.0",
+    "http-server": "^0.12.3"
   }
 }
