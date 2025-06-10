@@ -6,11 +6,13 @@
     "node": ">=16.0.0"
   },
   "scripts": {
-    "build": "html-minifier-terser --output-dir dist --input-dir src --collapse-whitespace --minify-css --process-scripts=text/javascript",
-    "deploy": "npm run build && firebase deploy",
+    "build_html": "html-minifier-terser --output-dir dist --input-dir src --collapse-whitespace --minify-css --process-scripts=text/javascript",
+    "copy_docs": "cp documents/* dist/",
+    "build": "npm run build_html && npm run copy_docs",
+    "deploy": "./scripts/deploy.sh",
     "open": "open dist/index.html",
     "serve": "http-server dist",
-    "watch": "chokidar src/index.html src/404.html -c \"npm run build\""
+    "watch": "chokidar src/* documents/* -c \"npm run build\""
   },
   "repository": {
     "type": "git",
