@@ -3,10 +3,10 @@
   "version": "2.0.0",
   "description": "Dylan Nelson's personal website",
   "engines": {
-    "node": "5.4.7"
+    "node": ">=16.0.0"
   },
   "scripts": {
-    "build": "html-minifier --output-dir dist --input-dir src --collapse-whitespace --minify-css --process-scripts=text/javascript",
+    "build": "html-minifier-terser --output-dir dist --input-dir src --collapse-whitespace --minify-css --process-scripts=text/javascript",
     "deploy": "npm run build && firebase deploy",
     "open": "open dist/index.html",
     "serve": "http-server dist",
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/dylanonelson/dylanonelson-site#readme",
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
-    "html-minifier": "^4.0.0",
-    "http-server": "^0.12.3"
+    "html-minifier-terser": "^7.2.0",
+    "http-server": "^14.1.1"
   }
 }
